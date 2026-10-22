@@ -18,8 +18,6 @@ public class Goel_MadLibs {
         System.out.print("Enter your name: ");
         String name = scanner.nextLine();
 
-        //Replace name placeholder with user in
-
         // Prompt the user for a noun
         System.out.print("Enter a noun: ");
         String noun = scanner.nextLine();
