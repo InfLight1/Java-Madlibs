@@ -22,7 +22,7 @@ public class Goel_MadLibs_test {
 
 
         // The final story with user inputs included 
-        String story =  "The " + noun + verb + "across the " + adjective + " pond.";
+        String story =  "The " + noun + " " + verb + " across the " + adjective + " pond.";
         String story2 = "I went to the zoo to see a " + noun + ". There were people " + verb + " around the enclosure which made the " + adjective + " apes go bananas.";
         System.out.println("\nHere are the Mad Libs stories:\n");
         System.out.println(story);
