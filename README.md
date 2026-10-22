@@ -19,8 +19,7 @@ Work Division:
 - Sergey: Wrote all scanner (input) statements for the base program
 - Ayan: Added formatted story template with variables and all output statements in the base program
 
-  
-
-
 ---
+Test Case 1
+<img width="808" height="743" alt="Screenshot 2026-10-22 085337" src="https://github.com/user-attachments/assets/1accd7df-f81e-403f-baba-b21b73272bbf" />
 
