@@ -20,6 +20,13 @@ Work Division:
 - Ayan: Added formatted story template with variables and all output statements in the base program
 
 ---
-Test Case 1
+Test Cases
 <img width="808" height="743" alt="Screenshot 2026-10-22 085337" src="https://github.com/user-attachments/assets/1accd7df-f81e-403f-baba-b21b73272bbf" />
+
+
+Our Program
+
+<img width="832" height="737" alt="image" src="https://github.com/user-attachments/assets/5c30c1c7-f84d-4d5c-b4e7-219464b1ca4e" />
+
+<img width="408" height="304" alt="image" src="https://github.com/user-attachments/assets/6cb83817-b4da-4381-8e7a-dbd4b21a0c3e" />
 
