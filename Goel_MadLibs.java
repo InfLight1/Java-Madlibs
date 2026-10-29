@@ -1,4 +1,3 @@
-// Import the Scanner class to read user input
 import java.util.Scanner;
 
 public class Goel_MadLibs {
@@ -6,40 +5,65 @@ public class Goel_MadLibs {
         Scanner scanner = new Scanner(System.in);
         
         // Define the original story with placeholders
-        String originalStory = "Once upon a time, <name> found a magical <noun>.\n"
+        String story = "Once upon a time, <name> found a magical <noun>.\n"
         + "They decided to <verb> it, and it turned out to be very <adjective>.\n"
         + "In the end, they discovered that the magic lasted for <number> days!";
 
         // Display the original story
         System.out.println("Original Mad Lib:");
-        System.out.println(originalStory);
+        System.out.println(story);
+        System.out.println();
 
-        // Prompt the user for their name
+        // Prompt the user for inputs
         System.out.print("Enter your name: ");
         String name = scanner.nextLine();
 
-        // Prompt the user for a noun
         System.out.print("Enter a noun: ");
         String noun = scanner.nextLine();
 
-        // Prompt the user for a verb
         System.out.print("Enter a verb: ");
         String verb = scanner.nextLine();
 
-        // Prompt the user for an adjective
         System.out.print("Enter an adjective: ");
         String adjective = scanner.nextLine();
         
-        // Prompt the user for a number
         System.out.print("Enter a number: ");
-        int number = scanner.nextInt();
+        String number = scanner.nextLine();
 
-        // The final story with user inputs included 
-        String story =  "Once upon a time, " + name + " found a magical " + noun + ".\n" +
-                       "They decided to " + verb + " it, and it turned out to be very " + adjective + ".\n" +
-                       "In the end, they discovered that the magic lasted for " + number + " days!";
+        // Replace <name>
+        int nameSpot = story.indexOf("<name>");
+        String beforeName = story.substring(0, nameSpot);
+        String afterName = story.substring(nameSpot + "<name>".length());
+        story = beforeName + name + afterName;
 
-        System.out.println("\nHere is the Mad Libs story:\n");
+        // Replace <noun>
+        int nounSpot = story.indexOf("<noun>");
+        String beforeNoun = story.substring(0, nounSpot);
+        String afterNoun = story.substring(nounSpot + "<noun>".length());
+        story = beforeNoun + noun + afterNoun;
+
+        // Replace <verb>
+        int verbSpot = story.indexOf("<verb>");
+        String beforeVerb = story.substring(0, verbSpot);
+        String afterVerb = story.substring(verbSpot + "<verb>".length());
+        story = beforeVerb + verb + afterVerb;
+
+        // Replace <adjective>
+        int adjSpot = story.indexOf("<adjective>");
+        String beforeAdj = story.substring(0, adjSpot);
+        String afterAdj = story.substring(adjSpot + "<adjective>".length());
+        story = beforeAdj + adjective + afterAdj;
+
+        // Replace <number>
+        int numSpot = story.indexOf("<number>");
+        String beforeNum = story.substring(0, numSpot);
+        String afterNum = story.substring(numSpot + "<number>".length());
+        story = beforeNum + number + afterNum;
+
+        // Display the completed story
+        System.out.println("\nHere's your mad lib story:");
         System.out.println(story);
+
+        scanner.close();
     }
 }
